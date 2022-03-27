@@ -1,0 +1,25 @@
+.container_homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body {
+    background-image: url(./wallpapersden.com_taylor-swift-2018-photoshoot_3840x2400.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+h3 {
+    font-size: large;
+}
+
+h2 {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.blog_content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
