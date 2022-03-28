@@ -14,31 +14,35 @@
 
 <body>
     <!-- 顶部菜单 -->
-    <div class="ui borderless menu">
-        <div class="ui container">
-            <a title="Index" class="header item" href="/" style="background-color:rgb(255, 224, 228)">menu</a>
-            <a title="Index" class="header item" href="/" style="background-color:pink">Blogs</a>
+    <div class="ui sticky fixed top">
+        <div class="ui borderless menu">
+            <div class="ui container">
+                <a title="Index" class="header item" href="/" style="background-color:rgb(255, 224, 228)">menu</a>
+                <a title="Index" class="header item" href="/" style="background-color:pink">Blogs</a>
+            </div>
+            <a class="ui twitter icon button" href="https://twitter.com/AboFat_">
+                <i class="twitter icon"></i>
+            </a>
+            <button class="ui wechat icon button" style="background-color:#07c160" data-tooltip="Ningzy_pku"
+                data-position="bottom center">
+                <i class="wechat icon"></i>
+            </button>
+            <button class="ui qq icon button" style="background-color:#26a5e4" data-tooltip="43274071"
+                data-position="bottom center">
+                <i class="qq icon"></i>
+            </button>
+            <a class="ui github icon button" style="background-color:rgb(192, 192, 192)"
+                href="https://github.com/Abo-Fat">
+                <i class="github icon"></i>
+            </a>
         </div>
-        <a class="ui twitter icon button" href="https://twitter.com/AboFat_">
-            <i class="twitter icon"></i>
-        </a>
-        <button class="ui wechat icon button" style="background-color:#07c160" data-tooltip="Ningzy_pku" data-position="bottom center">
-            <i class="wechat icon"></i>
-        </button>
-        <button class="ui telegram icon button" style="background-color:#26a5e4">
-            <i class="telegram icon"></i>
-        </button>
-        <a class="ui github icon button" style="background-color:rgb(192, 192, 192)" href="https://github.com/Abo-Fat">
-            <i class="github icon"></i>
-        </a>
     </div>
     <!-- 菜单结束 -->
     <div class="ui container" style="opacity: 0.7;">
         <div class="ui grid">
             <!-- 分栏 -->
             <div class="twelve wide column">
-                <div class="ui segment"
-                style="background-color: pink;">
+                <div class="ui segment" style="background-color: pink;">
                     <h2 class="ui medium header">
                         ✍Blogs
                     </h2>
@@ -65,7 +69,7 @@
                                 <i class="heart icon"></i> Like
                             </div>
                             <a class="ui basic red left pointing label">
-                                0
+                                1
                             </a>
                         </div>
                         <div class="ui labeled button" tabindex="0">
@@ -151,18 +155,31 @@
                         <button class="ui right floated button">Learn more</button>
                     </div>
                     <!-- 博客结束 -->
-                    
+
                 </div>
             </div>
             <!-- 左栏结束 -->
+            <!-- 右栏开始 -->
             <div class="four wide column">
-                <div class="ui placeholder segment"
-                style="background-color: rgb(146, 248, 255);">
-                    <div class="ui header">
-                        To be continued
+                <div class="ui rail">
+                    <div class="ui sticky fixed top" style="padding:56px">
+                        <div class="ui segment" style="background-color: rgb(146, 248, 255);">
+                            <h2 class="ui medium header">
+                                📰Announcement
+                            </h2>
+                            <div class="ui section divider"></div>
+                            <!-- 标题和正式通知分界线 -->
+                            <ul class="ui list">
+                                <li class="anno_content">本网站目前还处于设计ui阶段，绝大部分已存在的按钮只是摆设，并无实际作用</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 右栏结束 -->
+            <!-- 回到最上按钮 -->
+
         </div>
     </div>
 </body>
