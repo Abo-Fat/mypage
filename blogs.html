@@ -12,13 +12,15 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
 </head>
 
-<body>
+<body style="background-image: url(./blog.jpg);background-size: contain;
+background-attachment: fixed;">
     <!-- 顶部菜单 -->
     <div class="ui sticky fixed top" style="width: 100%;">
         <div class="ui borderless menu" style="width: 100%;">
-            <div class="ui container" >
-                <a title="Index" class="header item" href="#" style="background-color:rgb(255, 224, 228)">menu</a>
-                <a title="Index" class="header item" href="./blogs.html" style="background-color:pink">Blogs</a>
+            <div class="ui container">
+                <a title="Index" class="header item" href="./index.html"
+                    style="background-color:rgb(255, 224, 228)">menu</a>
+                <a title="Index" class="header item" href="#" style="background-color:pink">Blogs</a>
                 <div class="abo_spacer"></div>
                 <a class="ui twitter icon button" href="https://twitter.com/AboFat_">
                     <i class="twitter icon"></i>
@@ -45,21 +47,6 @@
             <div class="twelve wide column" style="margin-top: 4rem;">
                 <div class="ui segment" style="background-color: pink;">
                     <!-- 自我介绍开始 -->
-                    <div class="ui cards" >
-                        <div class="borderless card" style="background-color: pink;">
-                            <div class="content">
-                                <div class="header">Zhiyuan Ning</div>
-                                <div class="meta">北京大学学生</div>
-                                <div class="ui bulleted list">
-                                    <li class="item abo_notice_content">应用物理专业</li>
-                                    <li class="item abo_notice_content">干啥啥不会，摆烂第一位</li>
-                                    <li class="item abo_notice_content">正在努力提升自己的能力</li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui divider"></div>
-                    <!-- 自我介绍结束 -->
                     <h2 class="ui medium header">
                         ✍Blogs
                     </h2>
@@ -180,15 +167,17 @@
             <div class="four wide column">
                 <div class="ui rail">
                     <div class="ui sticky fixed top" style="padding:56px">
-                        <div class="ui segment" style="background-color: rgb(146, 248, 255);">
+                        <div class="ui segment" style="background-color: rgb(255, 243, 131);">
                             <h2 class="ui medium header">
-                                📰Notice
+                                🔎Search For Blog
                             </h2>
-                            <div class="ui section divider"></div>
-                            <!-- 标题和正式通知分界线 -->
-                            <ul class="ui list">
-                                <li class="abo_notice_content">本网站目前还处于设计ui阶段，绝大部分已存在的按钮只是摆设，并无实际作用</li>
-                            </ul>
+                            <div class="ui search">
+                                <div class="ui icon input">
+                                    <input class="prompt" type="text" placeholder="search for blog">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +185,7 @@
 
             <!-- 右栏结束 -->
             <!-- 回到最上按钮 -->
-            
+
         </div>
     </div>
 </body>
