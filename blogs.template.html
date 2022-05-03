@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 声明改文档是一个HTML文档 -->
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>✍Blogs</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</head>
+
+<body style="background-image: url(./blog.jpg);background-size: contain;
+background-attachment: fixed;background-repeat: no-repeat;">
+
+    {{ menu }}
+    
+    <div class="ui container" style="opacity: 0.7;">
+        <div class="ui grid">
+            <!-- 分栏 -->
+            <div class="twelve wide column" style="margin-top: 4rem;">
+                <div class="ui segment" style="background-color: pink;">
+                    <!-- 自我介绍开始 -->
+                    <h2 class="ui medium header">
+                        ✍Blogs
+                    </h2>
+                    <div class="ui section divider"></div>
+                    <!-- 博客开始 -->
+                    {{ blogs }}
+                    <!-- 博客结束 -->
+
+                </div>
+            </div>
+            <!-- 左栏结束 -->
+            <!-- 右栏开始 -->
+            <div class="four wide column">
+                <div class="ui rail">
+                    <div class="ui sticky fixed top" style="padding:56px">
+                        <div class="ui segment" style="background-color: rgb(255, 243, 131);">
+                            <h2 class="ui medium header">
+                                🔎Search For Blog
+                            </h2>
+                            <div class="ui search">
+                                <div class="ui icon input">
+                                    <input class="prompt" type="text" placeholder="search for blog">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏结束 -->
+            <!-- 回到最上按钮 -->
+
+        </div>
+    </div>
+</body>

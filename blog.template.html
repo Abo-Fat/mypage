@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 声明改文档是一个HTML文档 -->
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</head>
+
+<body style="background-image: url(./blog.jpg);background-size: contain;
+background-attachment: fixed;background-repeat: no-repeat;">
+
+    {{ menu }}
+
+    <div class="ui container" style="opacity: 0.7;">
+        <div class="ui grid">
+            <!-- 分栏 -->
+            <div class="twelve wide column" style="margin-top: 4rem;">
+                <div class="ui segment" style="background-color: pink;">
+                    <h2 class="ui medium header">
+                        ✍Blogs
+                    </h2>
+                    <div class="ui section divider"></div>
+                    <!-- 博客开始 -->
+                    <div class="ui segment" style="background-color: rgb(245, 160, 174);">
+                        <div>
+                            <h3>{{ title }}</h3>
+                            <i class="clock outline icon">{{ time }}</i>
+                            <p></p>
+                            <a class="ui red tag label">{{ label }}</a>
+                        </div>
+                        <div class="ui divider"></div>
+                        <!-- 题目和正文分界线 -->
+                        <div>
+                            <p style="text-align:justify;" class="abo_blog_content">
+                                {{ text }}
+                            </p>
+                        </div>
+                        <div class="ui divider"></div>
+                        <!-- 正文和按钮分界线 -->
+                        <div class="ui labeled button" tabindex="0">
+                            <div class="ui red button">
+                                <i class="heart icon"></i> Like
+                            </div>
+                            <a class="ui basic red left pointing label">
+                                1
+                            </a>
+                        </div>
+                        <div class="ui labeled button" tabindex="0">
+                            <div class="ui yellow button">
+                                <i class="comment outline icon"></i> Comment
+                            </div>
+                            <a class="ui basic red left pointing label">
+                                0
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 博客结束 -->
+
+                </div>
+                <!-- 评论系统开始 -->
+                <div class="ui segment" style="background-color: rgb(245, 160, 174);">
+                    <div class="ui comments">
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="wallpapersden.com_taylor-swift-2018-photoshoot_3840x2400.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="author">阿波肥</a>
+                                <div class="metadata">
+                                    <div class="date">2022.05.03</div>
+                                </div>
+                                <div class="text">芜湖！ </div>
+                                <div class="actions">
+                                    <a class="reply active">Reply</a>
+                                </div>
+                                <form class="ui reply form">
+                                    <div class="field">
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="ui primary submit labeled icon button">
+                                        <i class="icon edit"></i> Add Reply
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论系统结束 -->
+            </div>
+            <!-- 左栏结束 -->
+            <!-- 右栏开始 -->
+            <div class="four wide column">
+                <div class="ui rail">
+                    <div class="ui sticky fixed top" style="padding:56px">
+                        <div class="ui segment" style="background-color: rgb(255, 243, 131);">
+                            <h2 class="ui medium header">
+                                🔎Search For Blog
+                            </h2>
+                            <div class="ui search">
+                                <div class="ui icon input">
+                                    <input class="prompt" type="text" placeholder="search for blog">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏结束 -->
+            <!-- 回到最上按钮 -->
+
+        </div>
+    </div>
+</body>

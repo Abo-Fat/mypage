@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- 声明改文档是一个HTML文档 -->
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</head>
+
+<body style="background-image: url(./blog.jpg);background-size: contain;
+background-attachment: fixed;background-repeat: no-repeat;">
+    <!-- 顶部菜单 -->
+    <div class="ui sticky fixed top" style="width: 100%;">
+        <div class="ui borderless menu" style="width: 100%;">
+            <div class="ui container">
+                <a title="Index" class="header item" href="./index.html"
+                    style="background-color:rgb(255, 224, 228)">Home</a>
+                <a title="Index" class="header item" href="#" style="background-color:pink">Blogs</a>
+                <a title="好康的" class="header item" href="./video.html" style="background-color:hotpink">私密视频</a>
+                <div class="abo_spacer"></div>
+                <a class="ui twitter icon button" href="https://twitter.com/AboFat_">
+                    <i class="twitter icon"></i>
+                </a>
+                <button class="ui wechat icon button" style="background-color:#07c160" data-tooltip="Ningzy_pku"
+                    data-position="bottom center">
+                    <i class="wechat icon"></i>
+                </button>
+                <button class="ui qq icon button" style="background-color:#26a5e4" data-tooltip="43274071"
+                    data-position="bottom center">
+                    <i class="qq icon"></i>
+                </button>
+                <a class="ui github icon button" style="background-color:rgb(192, 192, 192)"
+                    href="https://github.com/Abo-Fat">
+                    <i class="github icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 菜单结束 -->
+    <div class="ui container" style="opacity: 0.7;">
+        <div class="ui grid">
+            <!-- 分栏 -->
+            <div class="twelve wide column" style="margin-top: 4rem;">
+                <div class="ui segment" style="background-color: pink;">
+                    <!-- 自我介绍开始 -->
+                    <h2 class="ui medium header">
+                        ✍Blogs
+                    </h2>
+                    <div class="ui section divider"></div>
+                    <!-- 博客开始 -->
+                    <div class="ui segment" style="background-color: rgb(245, 160, 174);">
+    <div>
+        <h3>blog-1</h3>
+        <i class="clock outline icon">1900.01.01</i>
+        <p></p>
+        <a class="ui red tag label">123</a>
+    </div>
+    <div class="ui divider"></div>
+    <!-- 题目和正文分界线 -->
+    <div>
+        <p style="text-align:justify;" class="abo_blog_content">
+            {{ text }}
+        </p>
+    </div>
+    <div class="ui divider"></div>
+    <!-- 正文和按钮分界线 -->
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui red button">
+            <i class="heart icon"></i> Like
+        </div>
+        <a class="ui basic red left pointing label">
+            1
+        </a>
+    </div>
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui yellow button">
+            <i class="comment outline icon"></i> Comment
+        </div>
+        <a class="ui basic red left pointing label">
+            0
+        </a>
+    </div>
+    <button class="ui right floated button">Learn more</button>
+</div>
+<div class="ui segment" style="background-color: rgb(245, 160, 174);">
+    <div>
+        <h3>blog-2</h3>
+        <i class="clock outline icon">1900.01.01</i>
+        <p></p>
+        <a class="ui red tag label">456</a>
+    </div>
+    <div class="ui divider"></div>
+    <!-- 题目和正文分界线 -->
+    <div>
+        <p style="text-align:justify;" class="abo_blog_content">
+            {{ text }}
+        </p>
+    </div>
+    <div class="ui divider"></div>
+    <!-- 正文和按钮分界线 -->
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui red button">
+            <i class="heart icon"></i> Like
+        </div>
+        <a class="ui basic red left pointing label">
+            1
+        </a>
+    </div>
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui yellow button">
+            <i class="comment outline icon"></i> Comment
+        </div>
+        <a class="ui basic red left pointing label">
+            0
+        </a>
+    </div>
+    <button class="ui right floated button">Learn more</button>
+</div>
+                    <!-- 博客结束 -->
+
+                </div>
+            </div>
+            <!-- 左栏结束 -->
+            <!-- 右栏开始 -->
+            <div class="four wide column">
+                <div class="ui rail">
+                    <div class="ui sticky fixed top" style="padding:56px">
+                        <div class="ui segment" style="background-color: rgb(255, 243, 131);">
+                            <h2 class="ui medium header">
+                                🔎Search For Blog
+                            </h2>
+                            <div class="ui search">
+                                <div class="ui icon input">
+                                    <input class="prompt" type="text" placeholder="search for blog">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏结束 -->
+            <!-- 回到最上按钮 -->
+
+        </div>
+    </div>
+</body>
