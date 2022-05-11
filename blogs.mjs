@@ -26,5 +26,15 @@ export const blogs = [
             <img src="./blog3pic2.jpg">
         </div>`,
         slug: 'blog-3'
+    },
+    {
+        title: '数据结构与算法复习',
+        label: 'c++',
+        time: '2022.05.11',
+        text:`期末考试以前的临时抱佛脚！
+        <P>
+            <a class="ui teal button" href="https://www.notion.so/effbeab3d64b4420b92f1bc805809224">Notion</a>
+        </p>`,
+        slug: 'blog-4'
     }
 ]
